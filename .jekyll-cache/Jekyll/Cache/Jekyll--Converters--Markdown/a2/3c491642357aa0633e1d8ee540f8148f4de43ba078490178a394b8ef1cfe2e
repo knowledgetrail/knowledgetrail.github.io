@@ -1,0 +1,94 @@
+I"�<h2 id="abstract">Abstract</h2>
+
+<p>While people have access to vast amounts of knowledge, the events and discoveries that shape our understanding often remain hidden. Traditional timelines, limited to pre-curated content, restrict the depth and breadth of exploration, missing opportunities to engage with and evaluate diverse topics. To address this, we introduce the notion of a generative timeline—a timeline that can dynamically expand or shrink based on users’ exploration, using generative AI to enhance sensemaking around historical events and knowledge formation. We developed KnowledgeTrail, an interactive system designed to explore the potential of this idea. A preliminary evaluation with 8 participants revealed that KnowledgeTrail enables creative exploration and leads to serendipitous discoveries. Our user study further shows that KnowledgeTrail empowers users to meaningfully explore and evaluate the genealogy of knowledge. This paper contributes the concept of generative timelines and discusses its implications for future timeline-based systems that incorporate this dynamic approach.</p>
+
+<hr />
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/cBfJMnyA6qU?si=LH0B9j68EH7NqnXt&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+
+<h2 id="node">Generative Timeline</h2>
+
+<p>Our work introduces the concept of the generative timeline. This illustration highlights its key features. Prior work on timelines involved timelines either constructed from pre-existing documents or curated by experts, limiting users’ ability to explore beyond the available dataset or the predefined timeline. In contrast, with the use of AI models, the generative timeline can dynamically expand or contract for (A) breadth-based or (B) depth-based exploration, enabling flexible, untethered exploration.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/generative_timeline.png" />
+  </div>
+</div>
+
+<p>An example of event generation in KnowledgeTrail: Users can generate events relating to a topic by (A) hovering over an event and (B) selecting the Events button in the Expand Bar or (C) Search Bar. This renders them in the canvas with arrows (D) tracing out the path of generation. A description on how these generated events are related is then (E) displayed in the Side Panel under the Relationships tab.</p>
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:100%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/Teaser New.png" />
+  </div>
+</div>
+
+<p>Contextual Event Generation: Users can steer the type of event generation within a single prompt (e.g. United States). One context (World War II) can generate events focusing around that topic (A), while another context (Revolution) can help constrain the generation to a completely separate group of events (B) when the Events button is clicked.</p>
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/EventGenerationContext.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width: 100%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/ExplainQuestionsFlow.png" />
+  </div>
+</div>
+<p>Generating Descriptions Flow: Users can (1) learn more details about a topic in the Search Box or event in the timeline by (2) using the Explain button. A detailed explanation is then (3) generated in the Side Panel for the given topic/event. To facilitate further exploration on the topic, the Questions button (4) can be clicked to generate a list of questions relating to the topic and context. Users can (5) select one of these questions to learn more about and a response will be (6) generated again on the Side Panel.</p>
+
+<div style="text-align:-webkit-center; display: flex; flex-direction: row">
+  <div class="img-container" style="width: 50%; text-align: -webkit-center; padding: 5px;">
+    <img src="/assets/img/knowledgetrail/Legend1.png" />
+    No Event Types selected
+  </div>
+  <div class="img-container" style="width: 50%; text-align: -webkit-center; padding: 5px;">
+    <img src="/assets/img/knowledgetrail/Legend2.png" />
+    Selected the Event Type
+  </div>
+</div>
+<p>Legend Panel: All Event Types and their assigned color coding are listed here. Users can filter and efficiently navigate (b) to a select group of nodes corresponding to the label they select. Matching nodes of that type are highlighted and the view zooms in to focus on these events.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width: 50%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/SemanticZoom1.png" />
+    Semantic Zoom (Scale &gt; 0.4)
+  </div>
+  <div class="img-container" style="width: 50%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/SemanticZoom2.png" />
+    Semantic Zoom (Scale &lt;= 0.4)
+  </div>
+  Semantic Zoom: As users zoom out on the Timeline View (&lt;= 0.4 zoom scale) to see relationships and patterns between the generated events (e.g., clusters of nearby events, groupings of similar event types, etc.), the nodes will collapse into dots to make them more salient and readable. As a user (b) hovers over an event, the title for that event is displayed along with a small summary of the event as long as the Explain button has been clicked for this event before.
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width: 100%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/SelectTitleOrEvent-horizontal.png" />
+    Navigation from the Side Panel: Users can easily return to previously generated content on the timeline by using the Side Panel. By (2) clicking on the title of a result in the Relationships tab, the Timeline View will change to encompass all of the events referenced in that result. When (3) selecting an individual event in the timeline or the Side Panel, the view will zoom in on that particular event on the timeline. Hovering over an event within a Side Panel result will highlight that event on the timeline to make it easy to spot amongst other generated nodes.
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/GenerateRelationships.png" />
+    Generating Relationships: Users can determine the relation between 2 or more separate events generated on the timeline by selecting the events and clicking the Generate Relationship button. A paragraph describing the potential relationship between the events is then generated and displayed in the Side Panel under the Relationships tab.
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/before-and-after.png" />
+    A screenshot of P5's exploration of the historical development of `thermodynamics.' As shown, P5 explored events prior and after `Euler's fluid dynamics equation.' To create the events that `Euler's fluid dynamics equation' led to, P5 had to change the context from `how it evolved' to `how it evolved after this equation's derivation,' showing the need for some prompt engineering in order to get KnowledgeTrail to behave the way users want.
+  </div>
+</div>
+
+<!-- ---
+<h2 id="node">2. Node: Content Structure & Features</h2>
+
+<h3 id="node">2-1. Persona, Problem, and Solution Nodes </h3> -->
+
+:ET
