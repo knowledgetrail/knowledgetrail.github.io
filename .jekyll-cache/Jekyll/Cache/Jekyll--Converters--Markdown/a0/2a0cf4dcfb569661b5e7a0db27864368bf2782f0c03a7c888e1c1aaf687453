@@ -1,0 +1,66 @@
+I"<h2 id="abstract">Abstract</h2>
+
+<p>While people have access to vast amounts of knowledge, the events and discoveries that shape our understanding often remain hidden. Traditional timelines, limited to pre-curated content, restrict the depth and breadth of exploration, missing opportunities to engage with and evaluate diverse topics. To address this, we introduce the notion of a generative timeline—a timeline that can dynamically expand or shrink based on users’ exploration, using generative AI to enhance sensemaking around historical events and knowledge formation. We developed KnowledgeTrail, an interactive system designed to explore the potential of this idea. A preliminary evaluation with 8 participants revealed that KnowledgeTrail enables creative exploration and leads to serendipitous discoveries. Our user study further shows that KnowledgeTrail empowers users to meaningfully explore and evaluate the genealogy of knowledge. This paper contributes the concept of generative timelines and discusses its implications for future timeline-based systems that incorporate this dynamic approach.</p>
+
+<hr />
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/cBfJMnyA6qU?si=LH0B9j68EH7NqnXt&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/generative_timeline.png" />
+    Our work introduces the concept of the generative timeline. This illustration highlights its key features. Prior work on timelines involved timelines either constructed from pre-existing documents or curated by experts, limiting users' ability to explore beyond the available dataset or the predefined timeline. In contrast, with the use of AI models, the generative timeline can dynamically expand or contract for (A) breadth-based or (B) depth-based exploration, enabling flexible, untethered exploration.
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/EventGenerationContext.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width: 70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/GenerateRelationships.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/SemanticZoom1.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/Teaser New.png" />
+    An example of event generation in KnowledgeTrail: Users can generate events relating to a topic by (A) hovering over an event and (B) selecting the Events button in the Expand Bar or (C) Search Bar. This renders them in the canvas with arrows (D) tracing out the path of generation. A description on how these generated events are related is then (E) displayed in the Side Panel under the Relationships tab.
+  </div>
+</div>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/DRFfpwX5uhQ?si=ReXgCWtw8-pyoV87&amp;start=11&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+<h2 id="node">2. Node: Content Structure &amp; Features</h2>
+
+<h3 id="node">2-1. Persona, Problem, and Solution Nodes </h3>
+
+<p>The three nodes—Persona, Problem, and Solution Nodes—are similar in its structure, but they differ in the types of attributes. For example, the persona node helps users define target users through attributes like name, location, needs, and challenges, as shown below.</p>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/nDgmP08xUNA?si=2M8aDpFQGpNPBouN&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>These attributes can be filled in manually (“Edit manually”) or generated using AI to assist with brainstorming user profiles.</p>
+
+<h3 id="node">2-2. Storyboard Node </h3>
+
+:ET

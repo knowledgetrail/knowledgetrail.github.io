@@ -1,0 +1,231 @@
+I"�4<h2 id="abstract">Abstract</h2>
+
+<p>While people have access to vast amounts of knowledge, the events and discoveries that shape our understanding often remain hidden. Traditional timelines, limited to pre-curated content, restrict the depth and breadth of exploration, missing opportunities to engage with and evaluate diverse topics. To address this, we introduce the notion of a generative timeline—a timeline that can dynamically expand or shrink based on users’ exploration, using generative AI to enhance sensemaking around historical events and knowledge formation. We developed KnowledgeTrail, an interactive system designed to explore the potential of this idea. A preliminary evaluation with 8 participants revealed that KnowledgeTrail enables creative exploration and leads to serendipitous discoveries. Our user study further shows that KnowledgeTrail empowers users to meaningfully explore and evaluate the genealogy of knowledge. This paper contributes the concept of generative timelines and discusses its implications for future timeline-based systems that incorporate this dynamic approach.</p>
+
+<hr />
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/cBfJMnyA6qU?si=LH0B9j68EH7NqnXt&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/generative_timeline.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/EventGenerationContext.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width: 70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/GenerateRelationships.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/SemanticZoom1.png" />
+  </div>
+</div>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align: -webkit-center;">
+    <img src="/assets/img/knowledgetrail/Teaser New.png" />
+    An example of event generation in KnowledgeTrail: Users can generate events relating to a topic by (A) hovering over an event and (B) selecting the Events button in the Expand Bar or (C) Search Bar. This renders them in the canvas with arrows (D) tracing out the path of generation. A description on how these generated events are related is then (E) displayed in the Side Panel under the Relationships tab.
+  </div>
+</div>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/DRFfpwX5uhQ?si=ReXgCWtw8-pyoV87&amp;start=11&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+<h2 id="node">2. Node: Content Structure &amp; Features</h2>
+
+<h3 id="node">2-1. Persona, Problem, and Solution Nodes </h3>
+
+<p>The three nodes—Persona, Problem, and Solution Nodes—are similar in its structure, but they differ in the types of attributes. For example, the persona node helps users define target users through attributes like name, location, needs, and challenges, as shown below.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:50%; text-align:center">
+    <img src="/assets/img/storyensemble/persona-node.png" />
+  </div>
+</div>
+<p>Persona node: An (A) illustrative image, (B) name and (C) attributes which represent a persona. Each node has (D) a toolbar for editing and creating related nodes.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align:center">
+    <img src="/assets/img/storyensemble/manual.png" />  
+  </div>
+</div>
+<p>By clicking the “Edit manually” button in the toolbar, users can manually edit the contents of a node using an interface with text fields, as shown in the above figure, with a similar interface applied across all node types.</p>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/nDgmP08xUNA?si=2M8aDpFQGpNPBouN&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>These attributes can be filled in manually (“Edit manually”) or generated using AI to assist with brainstorming user profiles.</p>
+
+<h3 id="node">2-2. Storyboard Node </h3>
+
+<p>Each storyboard includes (A) a title and multiple frames, where (B) each frame contains a specific type (e.g., Context, Problem, Solution, Resolution), an image, and a caption. Users can (C) open a panel to edit an existing frame or (D) add new frames to expand the narrative. (E) Settings allow users to customize the image style (e.g., digital-art, line-art, comic-book) and regenerate all storyboard images.</p>
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:100%; text-align:center">
+    <img src="/assets/img/storyensemble/storyboard-node.png" />
+  </div>
+</div>
+
+<p>A pop up panel appears when users click on the edit icon (see Fig. C in the above figure). Using the panel, users can edit a frame’s type, description, and caption to regenerate the frame image or all images or remove the frame entirely.</p>
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:40%; text-align:center">
+    <img src="/assets/img/storyensemble/storyboard-edit.png" />
+  </div>
+</div>
+<p>After users select ‘Regenerate image,’ the text in the description box is used as prompt to instruct what image gets generated for the frame.</p>
+
+<p>See it in action.</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/gUZwrPQrZHI?si=2pEjnL1Vw4_WvcDZ&amp;start=9&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+
+<h2 id="propagation">Features</h2>
+
+<h3 id="revise-with-ai">Revise with AI</h3>
+
+<p>This feature allows users to update (A) idea content by providing (B) natural language prompts. (C) AI suggests instructions for iteration, and (D) revised content is automatically underlined for clarity.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align:center">
+    <img src="/assets/img/storyensemble/revise.png" />
+  </div>
+</div>
+
+<h3 id="fill-in-missing-values">Fill in Missing Values</h3>
+<p>This feature supports brainstorming. When you have missing values in any node, you can ask AI to fill in these values.</p>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=4fvK8G3xoOdZlMVc&amp;start=18&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="generate-more">Generate More</h3>
+<p>Users can build on (A) a selected idea by (B) entering their own suggestions or (C) utilizing AI-generated recommendations. The system then generates (D) additional ideas to explore further possibilities.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:70%; text-align:center">
+    <img src="/assets/img/storyensemble/generate-more.png" />
+  </div>
+</div>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=33Y0ZQ82EENA_Jnh&amp;start=89&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="view-feedback">View Feedback</h3>
+
+<p>You can get AI-generated feedback on any node.</p>
+
+<p>See it in action.</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/a577XkirrFQ?si=oEAk6404WaBGpVYm&amp;start=44&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="ai-suggestions">AI Suggestions</h3>
+<p>AI suggestions get generated in the revise tab of every node or when users try to generate more.</p>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=33Y0ZQ82EENA_Jnh&amp;start=89&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="forward-propagation">Forward Propagation</h3>
+<p>Users can cascade changes from an earlier design stage to a later stage (e.g., persona to problem statement) by (A) connecting the nodes with an edge or updating a connected node (Zero-waste Zach) and (B) refreshing the later artifact to generate (C) an updated artifact.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:60%; text-align:center">
+    <img src="/assets/img/storyensemble/forward-propagation.png" />
+  </div>
+</div>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=zkPWRR_yF3hhsxxe&amp;start=140&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="backpropagation">Backpropagation</h3>
+
+<p>Users can cascade changes from a <i>later</i> design stage to an <i>earlier</i> stage (e.g., extract problem statement from a solution).</p>
+
+<p>By (A) connecting a solution to a problem, (B) a notification is displayed to refresh the problem which (C) updates the problem according to the solution.</p>
+
+<div style="text-align:-webkit-center">
+  <div class="img-container" style="width:60%; text-align:center">
+    <img src="/assets/img/storyensemble/backward-propagation.png" />
+  </div>
+</div>
+
+<p>See it in action below.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=AuUHBRPe90DjulIK&amp;start=57&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+<h2>Extra Features</h2>
+
+<h3>Download canvas &amp; storyboard images</h3>
+<p>You can download canvas &amp; storyboard iamges. We ask you to upload it in the assigne GDrive folder at the end of the prototype session.</p>
+
+<p>See it in action.</p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/_vdU11FSbIo?si=mmBsoTYX_PDE2yg_" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr />
+<h2>3. Workflow Examples</h2>
+
+<p>This simple workflow below shows uploading images to each frame and also being able to use AI to generate images and set their style.</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/gUZwrPQrZHI?si=hL4eq9XU67WisDna&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>The relatively more complex workflow below shows a number of techniques.</p>
+
+<ul>
+  <li>It shows using AI to fill in missing values.</li>
+  <li>It shows generating a storyboard from a solution node.</li>
+  <li>It shows a backpropagation.</li>
+  <li>It also shows more feature to generate more solutions and more personas.</li>
+  <li>It also shows connecting a node to another and propagate changes.</li>
+</ul>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/iDw0wBoQrxw?si=jkapov4PYZwxoixB&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>This workflow shows how you can steer solution ideas from a problem node and also steer the generation of images in a storyboard.</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/Q2TumFHae2Y?si=2la1tJ5GN9z9MYvv&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>This workflow shows how you can brainstorm feature ideas with AI.</p>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/73yv1CreIGI?si=ASOiDVz-ZhDqqqu0&amp;color=white&amp;rel=0&amp;modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+:ET
