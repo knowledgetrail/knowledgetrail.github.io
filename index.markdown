@@ -4,13 +4,13 @@ layout: default
 
 ## Abstract
 
-While people have access to vast amounts of knowledge, the events and discoveries that shape our understanding often remain hidden. Traditional timelines, limited to pre-curated content, restrict the depth and breadth of exploration, missing opportunities to engage with and evaluate diverse topics. To address this, we introduce the notion of a generative timeline—a timeline that can dynamically expand or contract based on users' exploration, using generative AI to enhance sensemaking around historical events and knowledge formation. We developed KnowledgeTrail, an interactive system designed to explore the potential of this idea. A preliminary evaluation with 8 participants revealed that KnowledgeTrail enables creative exploration and leads to serendipitous discoveries. Our user study further shows that KnowledgeTrail empowers users to meaningfully explore and evaluate the genealogy of knowledge. This paper contributes the concept of generative timelines and discusses its implications for future timeline-based systems that incorporate this dynamic approach.
+Timelines have traditionally been limited to pre-curated content, restricting users to predefined scopes (e.g., themes or time periods) rather than empowering them to creatively explore evolving areas of curiosity. Leveraging recent advances in AI that can cater to dynamic information needs, we envision more adaptable timelines that provide untethered experiences to enable curiosity-driven exploration. We propose the concept of a generative timeline—a timeline that expands or contracts to adapt to users’ evolving exploration and knowledge-building processes. To instantiate and evaluate this concept, we developed KnowledgeTrail, an interactive system that empowers users to flexibly explore historical events and the process of knowledge formation. A preliminary evaluation with eight participants revealed that KnowledgeTrail supports creative exploration, fosters serendipitous discoveries, and subsequently results in a self-reinforcing cycle of curiosity. This paper contributes the concept of a generative timeline, insights into its design and user experience, and implications for future timeline-based systems that embrace dynamic, user-driven exploration.
 
 ---
 
 
 <div class="video-wrapper">
-  <iframe src="https://www.youtube.com/embed/-GgG7bPvk9s?si=pJWIonKZtrxFvVE6&color=white&rel=0&modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/RjxtAh414WU?si=mO_QHjW_32NUxNBb&color=white&rel=0&modestlogo=1" id="yt-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
